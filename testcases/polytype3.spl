@@ -1,0 +1,2 @@
+let f = fn x => let g = fn y => x in g x end in f 1; f true end
+(*fn x => x + 1*)

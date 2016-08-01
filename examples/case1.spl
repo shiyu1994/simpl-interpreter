@@ -1,0 +1,6 @@
+let y = 
+	let z = inr [bool + (int*int list)] let x = 1 in ((x,x)::(x,x)::nil) end 
+		in case z of inl[bool + (int*int list)] x => if x then 2 else 3 | inr[bool		+(int*int list)] x => ((fst (hd x)) + (fst (hd x))) 
+		end
+	in y + 1 
+	end

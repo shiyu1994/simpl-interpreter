@@ -1,0 +1,8 @@
+let x = (ref true) in 
+let t = ref false 
+	in let f = fn z => rec g => fn y => if !t then z else (t := true;
+g (hd nil)(*without lazy evaluation, this expression will throw a runtime error*); z)  
+		in (f false 2, f 1 true) 
+	end 
+end
+end

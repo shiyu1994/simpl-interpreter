@@ -1,0 +1,5 @@
+let f = fn f => fn test => fn x =>
+	if (test x) then  f (f (f x))  else x
+in f (fn x => x / 3) (fn x => x > 0) 8
+end
+	

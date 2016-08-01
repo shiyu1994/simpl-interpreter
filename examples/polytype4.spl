@@ -1,0 +1,5 @@
+let x = ref false 
+	in let f = fn z => rec g => fn y => if !x then z else (x := true;g y;z) 
+		in (f false 2, f 1 true) 
+	end 
+end

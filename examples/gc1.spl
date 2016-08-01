@@ -1,0 +1,7 @@
+(*Set -heapsize:5 and use -lazyval. Without -gc the heap will be used up*)
+(*Set -heapsize:8 and don’t use -lazyval. Without -gc the heap will be used up*)
+let x = ref (ref (ref (ref 1))) in
+	let refs = ref (ref 1, ref 2) in
+	!(fst !refs) end; 
+	let y = ref 2 in y := !y + !!!!x; !y end
+end

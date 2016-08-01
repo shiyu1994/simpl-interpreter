@@ -1,0 +1,4 @@
+let x = inl[(((int ref) ref) ref) + int] ref ref ref 1 in 
+	case x of inl[(((int ref) ref) ref) + int] v1 => !!!v1 
+		| inr[(((int ref) ref) ref) + int] v2 => v2
+end

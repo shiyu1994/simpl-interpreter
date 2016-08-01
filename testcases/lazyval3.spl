@@ -1,0 +1,3 @@
+let f = fn x => fn y => fn z => if (x > y) then x else y in
+	f 1 2 (tl nil)
+end

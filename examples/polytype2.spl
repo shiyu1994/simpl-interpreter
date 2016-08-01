@@ -1,0 +1,9 @@
+(* using polymorphic types *)
+let g = rec map =>
+  fn f => fn l =>
+    if l=nil
+    then nil
+    else (f (hd l))::(map f (tl l))
+in if hd ( g (fn x => x) (false::true::nil) ) then g (fn x => x + 1) (1::2::3::nil)
+else g (fn x => x - 1) (1::2::3::nil)
+end

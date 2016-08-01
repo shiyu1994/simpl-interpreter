@@ -1,0 +1,7 @@
+(*Set heap size = 10. Without -gc, the heap will be used up*)
+let x=ref ref ref ref ref 0 in
+let y=ref ref ref ref ref 1 in
+x;y
+end
+end;
+ref 1
